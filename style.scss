@@ -1,0 +1,22 @@
+// Abstract
+@import './assets/sass/abstract/constants';
+@import './assets/sass/abstract/placeholders';
+@import './assets/sass/abstract/mixins';
+
+// Base
+@import './assets/sass/base/arrow';
+@import './assets/sass/base/base';
+@import './assets/sass/base/burger';
+@import './assets/sass/base/button';
+@import './assets/sass/base/checkbox';
+@import './assets/sass/base/icon';
+@import './assets/sass/base/input';
+
+// Layouts
+@import './assets/sass/layouts/wrapper';
+@import './assets/sass/layouts/columns';
+
+// Components
+@import './assets/sass/components/header';
+@import './assets/sass/components/main';
+@import './assets/sass/components/footer';
