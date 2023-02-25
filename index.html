@@ -1,22 +1,594 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg" href="./assets/favicon.svg" />
-    <link rel="stylesheet" href="./assets/reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" type="module" defer></script>
-    <title>Rem Volt</title>
-  </head>
 
-  <body>
-    <h1>Rem Volt</h1>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg" href="./assets/favicon.svg" />
+  <link rel="stylesheet" href="./assets/reset.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" type="module" defer></script>
+  <title>Rem Volt</title>
+</head>
+
+<body>
+  <header class="header">
+    <section class="header__wrapper wraper">
+      <div class="header__logo">Рем Vольт</div>
+      <ul class="header__info">
+        <li class="info__phone">
+          <a href="tel: +375298144648">+375 (29) 814-46-48</a>
+        </li>
+        <li class="info__mail">
+          <a href="mailto:Rem-Volt7@yandex.by">Rem-Volt7@yandex.by</a>
+        </li>
+        <li class="info__location">
+          <a href="https://www.google.ru/maps/" target="_blank">Витебская обл., г. п. Бешенковичи, ул. Ткаченко, 34</a>
+        </li>
+      </ul>
+      <nav class="header__navigation">
+        <ul>
+          <li><a href="#about">о компании</a></li>
+          <li><a href="#services">услуги</a></li>
+          <li><a href="#certificates">сертификаты</a></li>
+          <li><a href="#prices">цены</a></li>
+          <li><a href="#contacts">контакты</a></li>
+          <li><a href="#faq">ЧаВо</a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+
+  <main class="main">
+    <section class="screen__wrapper wrapper" id="screen">
+      <h1 class="screen__caption h1-text"><span class="selected-text">Ремонт</span> Электродвигателей, Погружных Насосов
+        и
+        <span class="selected-text">запасные части</span> к ним
+      </h1>
+      <p class="screen__text main-text">Специалисты предприятия выполняют ремонтные работы по устранению текущих
+        механических
+        и электрических неисправностей, а также капитальный ремонт электродвигателей.</p>
+      <button class="screen__button button-call">заказать звонок</button>
+    </section>
+    <section class="services__wrapper wrapper" id="services">
+      <h2 class="services__caption h2-text">Наши Услуги</h2>
+      <ul class="services__description">
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Капитальный ремонт электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Перемотка электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Ремонт ротора электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Ремонт асинхронного электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Ремонт якоря электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Ремонт обмоток электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Перемотка ротора электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+        </li>
+        <li class="description__item">
+          <div class="item__image">
+            <img src="" class="image__services" alt="">
+          </div>
+          <div class="item__caption bold-text">
+            <p class="caption__text">Перемотка якоря электродвигателя</p>
+          </div>
+          <div class="item__declaration">
+            <p class="declaration__text main-text">Lorem ipsum dolor sit amet consectetur. Nulla tellus vel nisl ac.
+              Lorem ipsum dolor sit amet consectetur.
+              Nulla tellus
+              vel nisl ac.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="services__buton button-moreless">еще услуги</button>
+    </section>
+    <section class="about__wrapper wrapper" id="about">
+      <h2 class="about__title h2-text">О Компании</h2>
+      <div class="about__block">
+        <div class="block__image">
+          <img src="" class="image__about" alt="">
+        </div>
+        <p class="block__text main-text">В целом, конечно, сложившаяся структура организации играет определяющее
+          значение для поэтапного и последовательного развития общества. Вот вам яркий пример современных тенденций —
+          выбранный нами инновационный путь представляет собой интересный эксперимент проверки стандартных подходов.
+          Противоположная точка зрения подразумевает, что предприниматели в сети интернет объявлены нарушающими
+          общечеловеческие нормы этики и морали. Современные технологии достигли такого уровня, что выбранный нами
+          инновационный путь предоставляет широкие возможности для дальнейших направлений развития. Банальные, но
+          неопровержимые выводы, а также ключевые особенности структуры проекта неоднозначны и будут призваны к
+          ответу. В рамках спецификации современных стандартов, многие известные личности неоднозначны и будут
+          рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.</p>
+      </div>
+    </section>
+    <section class="engine__wrapper wrapper">
+      <h2 class="engine__title h2-text">Ремонт и Обслуживание Электродвигателя</h2>
+      <div class="engine__block">
+        <p class="block__text main-text">В целом, конечно, сложившаяся структура организации играет определяющее
+          значение для поэтапного и последовательного развития общества. Вот вам яркий пример современных тенденций —
+          выбранный нами инновационный путь представляет собой интересный эксперимент проверки стандартных подходов.
+          Противоположная точка зрения подразумевает, что предприниматели в сети интернет объявлены нарушающими
+          общечеловеческие нормы этики и морали. Современные технологии достигли такого уровня, что выбранный нами
+          инновационный путь предоставляет широкие возможности для дальнейших направлений развития. Банальные, но
+          неопровержимые выводы, а также ключевые особенности структуры проекта неоднозначны и будут призваны к
+          ответу. В рамках спецификации современных стандартов, многие известные личности неоднозначны и будут
+          рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+        </p>
+        <div class="block__image">
+          <img src="" class="image__engine" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="pump__wrapper wrapper">
+      <h2 class="pump__title h2-text">Ремонт и Обслуживание Погружных Насосов</h2>
+      <div class="pump__block">
+        <div class="block__image">
+          <img src="" class="image__pump" alt="">
+        </div>
+        <p class="block__text main-text">В целом, конечно, сложившаяся структура организации играет определяющее
+          значение для поэтапного и последовательного развития общества. Вот вам яркий пример современных тенденций —
+          выбранный нами инновационный путь представляет собой интересный эксперимент проверки стандартных подходов.
+          Противоположная точка зрения подразумевает, что предприниматели в сети интернет объявлены нарушающими
+          общечеловеческие нормы этики и морали. Современные технологии достигли такого уровня, что выбранный нами
+          инновационный путь предоставляет широкие возможности для дальнейших направлений развития. Банальные, но
+          неопровержимые выводы, а также ключевые особенности структуры проекта неоднозначны и будут призваны к
+          ответу. В рамках спецификации современных стандартов, многие известные личности неоднозначны и будут
+          рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок.
+        </p>
+      </div>
+    </section>
+    <section class="questions__wrapper wraper">
+      <div class="questions__block">
+        <h2 class="block__title h2-text">Появились Вопросы?</h2>
+        <div class="block__text">
+          <p class="text__description main-text">
+            Оставьте ваши контактные данные и наши специалисты свяжутся с вами в течении 30 минут.
+          </p>
+        </div>
+      </div>
+      <form action="/" class="item__form">
+        <ul>
+          <li><input type="text" class="form__text" name="" required placeholder="Имя (обязательно)"></li>
+          <li><input type="phone" class="form__phone" name="" required placeholder="Телефон (обязательно)"></li>
+          <li><input type="email" class="form__email" name="" placeholder="Почта (не обязательно)"></li>
+          <li><input type="submit" class="form__submit" name="" value="заказать звонок"></li>
+        </ul>
+      </form>
+    </section>
+    <section class="certificates__wrapper wrapper" id="certificates">
+      <div class="certificates__title">
+        <div class="title__text">Сертификаты</div>
+        <div class="title__navigation">
+          <span class="navigation__left"></span>
+          <span class="navigation__right"></span>
+        </div>
+      </div>
+      <ul class="certificates__item">
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__certificates" class="" alt="">
+          </div>
+          <p class="description__text bold-text">Здесь будет название сертификата. Duis odio ipsum facilisis habitant ut
+            sagittis amet massa.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__certificates" class="" alt="">
+          </div>
+          <p class="description__text bold-text">Здесь будет название сертификата. Duis odio ipsum facilisis habitant ut
+            sagittis amet massa.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__certificates" class="" alt="">
+          </div>
+          <p class="description__text bold-text">Здесь будет название сертификата. Duis odio ipsum facilisis habitant ut
+            sagittis amet massa.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__certificates" class="" alt="">
+          </div>
+          <p class="description__text bold-text">Здесь будет название сертификата. Duis odio ipsum facilisis habitant ut
+            sagittis amet massa.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="prices__wrapper wrapper" id="prices">
+      <div class="prices__caption">
+        <h2 class="caption__title">Наши Цены</h2>
+        <p class="caption__text main-text">Тут мы указываем средние цены на наши услуги поскольку ценообразование
+          зависит от множества независящих от нас факторов.
+          Более точно вы можете узнать связавшись с нами.</p>
+        <button class="caption__button button-call">заказать звонок</button>
+      </div>
+      <div class="prices__table">
+        <div class="table__one">
+          <table>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table__two">
+          <table>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table__three">
+          <table>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+          </table>
+        </div>
+        <div class="table__four">
+          <table>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+            <tr>
+              <th>Здесь будет название услуги</th>
+            </tr>
+            <tr>
+              <td>100 руб</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="cooperation__wrapper wrapper">
+      <div class="cooperation__title">
+        <div class="title__text">Особенности Сотрудничества</div>
+      </div>
+      <ul class="cooperation__item">
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__cooperation" class="" alt="">
+          </div>
+          <p class="description__text main-text">Lorem ipsum dolor sit amet consectetur. Egestas proin a sed sem amet
+            sagittis parturient sapien.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__cooperation" class="" alt="">
+          </div>
+          <p class="description__text main-text">Lorem ipsum dolor sit amet consectetur. Egestas proin a sed sem amet
+            sagittis parturient sapien.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__cooperation" class="" alt="">
+          </div>
+          <p class="description__text main-text">Lorem ipsum dolor sit amet consectetur. Egestas proin a sed sem amet
+            sagittis parturient sapien.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__cooperation" class="" alt="">
+          </div>
+          <p class="description__text main-text">Lorem ipsum dolor sit amet consectetur. Egestas proin a sed sem amet
+            sagittis parturient sapien.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__cooperation" class="" alt="">
+          </div>
+          <p class="description__text main-text">Lorem ipsum dolor sit amet consectetur. Egestas proin a sed sem amet
+            sagittis parturient sapien.</p>
+        </li>
+        <li class="item__desctiption">
+          <div class="desctiption__image">
+            <img src="" class="image__cooperation" class="" alt="">
+          </div>
+          <p class="description__text main-text">Lorem ipsum dolor sit amet consectetur. Egestas proin a sed sem amet
+            sagittis parturient sapien.</p>
+        </li>
+      </ul>
+    </section>
+    <section class="faq__wrapper wrapper" id="faq">
+      <div class="faq__title">
+        <div class="title__text">Часто Задаваемые Вопросы</div>
+      </div>
+      <div class="faq__accardion">
+        <ul class="accardion__list">
+          <button class="list__button">В целом, конечно, сложившаяся структура организации играет определяющее
+            значение для поэтапного и
+            последовательного</button>
+          <li class="list__item">
+            <p class="item__text main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ut incidunt
+              ullam pariatur dignissimos
+              autem id sit. Doloremque commodi suscipit repellendus eos doloribus saepe quos minus incidunt laboriosam
+              optio consectetur itaque est aliquam illum dolores quidem sint, provident tempore, debitis eum! Enim nihil
+              magnam reprehenderit cum unde rem magni! Reprehenderit!</p>
+          </li>
+        </ul>
+        <ul class="accardion__list">
+          <button class="list__button">В целом, конечно, сложившаяся структура организации играет определяющее
+            значение для поэтапного и
+            последовательного</button>
+          <li class="list__item">
+            <p class="item__text main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ut incidunt
+              ullam pariatur dignissimos
+              autem id sit. Doloremque commodi suscipit repellendus eos doloribus saepe quos minus incidunt laboriosam
+              optio consectetur itaque est aliquam illum dolores quidem sint, provident tempore, debitis eum! Enim nihil
+              magnam reprehenderit cum unde rem magni! Reprehenderit!</p>
+          </li>
+        </ul>
+        <ul class="accardion__list">
+          <button class="list__button">В целом, конечно, сложившаяся структура организации играет определяющее
+            значение для поэтапного и
+            последовательного</button>
+          <li class="list__item">
+            <p class="item__text main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ut incidunt
+              ullam pariatur dignissimos
+              autem id sit. Doloremque commodi suscipit repellendus eos doloribus saepe quos minus incidunt laboriosam
+              optio consectetur itaque est aliquam illum dolores quidem sint, provident tempore, debitis eum! Enim nihil
+              magnam reprehenderit cum unde rem magni! Reprehenderit!</p>
+          </li>
+        </ul>
+        <ul class="accardion__list">
+          <button class="list__button">В целом, конечно, сложившаяся структура организации играет определяющее
+            значение для поэтапного и
+            последовательного</button>
+          <li class="list__item">
+            <p class="item__text main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ut incidunt
+              ullam pariatur dignissimos
+              autem id sit. Doloremque commodi suscipit repellendus eos doloribus saepe quos minus incidunt laboriosam
+              optio consectetur itaque est aliquam illum dolores quidem sint, provident tempore, debitis eum! Enim nihil
+              magnam reprehenderit cum unde rem magni! Reprehenderit!</p>
+          </li>
+        </ul>
+        <ul class="accardion__list">
+          <button class="list__button">В целом, конечно, сложившаяся структура организации играет определяющее
+            значение для поэтапного и
+            последовательного</button>
+          <li class="list__item">
+            <p class="item__text main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ut incidunt
+              ullam pariatur dignissimos
+              autem id sit. Doloremque commodi suscipit repellendus eos doloribus saepe quos minus incidunt laboriosam
+              optio consectetur itaque est aliquam illum dolores quidem sint, provident tempore, debitis eum! Enim nihil
+              magnam reprehenderit cum unde rem magni! Reprehenderit!</p>
+          </li>
+        </ul>
+        <ul class="accardion__list">
+          <button class="list__button">В целом, конечно, сложившаяся структура организации играет определяющее
+            значение для поэтапного и
+            последовательного</button>
+          <li class="list__item">
+            <p class="item__text main-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore ut incidunt
+              ullam pariatur dignissimos
+              autem id sit. Doloremque commodi suscipit repellendus eos doloribus saepe quos minus incidunt laboriosam
+              optio consectetur itaque est aliquam illum dolores quidem sint, provident tempore, debitis eum! Enim nihil
+              magnam reprehenderit cum unde rem magni! Reprehenderit!</p>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+    <section class="contacts__wrapper wrapper" id="contacts"></section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer__wrapper wraper"></section>
+  </footer>
+</body>
+
 </html>
