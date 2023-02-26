@@ -32,12 +32,12 @@
       </ul>
       <nav class="header__navigation">
         <ul>
-          <li><a href="#about">о компании</a></li>
-          <li><a href="#services">услуги</a></li>
-          <li><a href="#certificates">сертификаты</a></li>
-          <li><a href="#prices">цены</a></li>
-          <li><a href="#contacts">контакты</a></li>
-          <li><a href="#faq">ЧаВо</a></li>
+          <li><a href="#about" class="navigation__about">о компании</a></li>
+          <li><a href="#services" class="navigation__services">услуги</a></li>
+          <li><a href="#certificates" class="navigation__certificates">сертификаты</a></li>
+          <li><a href="#prices" class="navigation__prices">цены</a></li>
+          <li><a href="#contacts" class="navigation__contacts">контакты</a></li>
+          <li><a href="#faq" class="navigation__faq">ЧаВо</a></li>
         </ul>
       </nav>
     </section>
@@ -583,11 +583,85 @@
       </div>
 
     </section>
-    <section class="contacts__wrapper wrapper" id="contacts"></section>
   </main>
 
   <footer class="footer">
-    <section class="footer__wrapper wraper"></section>
+    <section class="footer__wrapper wraper">
+      <div class="form__info">
+        <form class="info__form">
+          <ul>
+            <li><input type="text" class="form__text" name="" required placeholder="Имя (обязательно)"></li>
+            <li><input type="phone" class="form__phone" name="" required placeholder="Телефон (обязательно)"></li>
+            <li><input type="submit" class="form__submit" name="" value="заказать звонок"></li>
+            <li class="form__notification mini-text">Мы не передаем ваши данные третьим лицам и не используем их для
+              рассылки рекламы</li>
+          </ul>
+        </form>
+        <div class="info__contacts" id="contacts">
+          <h3 class="contscts__title"></h3>
+          <ul class="contacts__list">
+            <li class="list__item">
+              <span class="item__text small-text">Директор: +375 (29) 814-46-48
+              </span>
+              <span class="item__text small-text">Бухгалтерия: (02131) – 4-11-71</span>
+            </li>
+            <li class="list__item">
+              <span class="item__text small-text">Rem-Volt7@yandex.by
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="item__text small-text">Почтовый адрес:
+              </span>
+              <span class="item__text small-text">211361 Витебская обл., г. п. Бешенковичи, ул. Ткаченко, 34
+              </span>
+            </li>
+            <li class="list__item">
+              <span class="item__text small-text">Юридический адрес:
+              </span>
+              <span class="item__text small-text">211361 Витебская обл.,  Бешенковичский р-н, Верхнекривинский с/с,
+                вблизи
+                д. Верхнее Кривино
+              </span>
+            </li>
+          </ul>
+        </div>
+        <ul class="info__requisites">
+          <li class="requisites__item small-text bolt-text">ОАО «Белагропромбанк»</li>
+          <li class="requisites__item small-text">УНП <span bolt-text>390491880</span></li>
+          <li class="requisites__item small-text">БИК <span bolt-text>BAPBBY2Х</span></li>
+          <li class="requisites__item small-text">Расчетный счет<br><span class="bolt-text">BY42 BAPB 3012 6630 0001
+              2000 0000</li>
+        </ul>
+        <div class="info__schedule">
+          <h3 class="schedule__title">Часы Работы</h3>
+          <div class="title__days">
+            <div class="days__weekdays">
+              <p class="weekands__title small-text">понедельник - пятница</p>
+              <p class="weekands__time hight-text">8:00 - 17:00</p>
+            </div>
+            <div class="days__weekend">
+              <p class="weekands__title small-text">суббота - воскресенье</p>
+              <p class="weekands__time hight-text">выходной</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="info__navigation">
+          <div class="navigation__title">Меню</div>
+          <ul class="navigation__list">
+            <li><a href="#about" class="list__about">о компании</a></li>
+            <li><a href="#services" class="list__services">услуги</a></li>
+            <li><a href="#certificates" class="list__certificates">сертификаты</a></li>
+            <li><a href="#prices" class="list__prices">цены</a></li>
+            <li><a href="#contacts" class="list__contacts">контакты</a></li>
+          </ul>
+        </div>
+        <div class="info__logo">Рем Vольт</div>
+      </div>
+      <div class="footer__copyright">
+        <p class="copyright__text small-text">2023, Сайт разработан компанией ВТОП3</p>
+      </div>
+    </section>
   </footer>
 </body>
 
