@@ -80,6 +80,7 @@ button,
 textarea,
 select {
   font: inherit;
+  padding: 0;
 }
 
 /* Blur images when they have no alt attribute */

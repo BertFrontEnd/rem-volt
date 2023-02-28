@@ -1,9 +1,37 @@
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 html body {
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input[type='submit'] {
+  cursor: pointer;
+}
+
+.wrapper {
+  position: relative;
+  max-width: 1792px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
