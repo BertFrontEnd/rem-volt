@@ -1,3 +1,9 @@
+.button-call,
+.button-moreless {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -27,6 +33,38 @@ input {
 
 input[type='submit'] {
   cursor: pointer;
+}
+
+.button-call,
+.button-moreless {
+  padding: 16px 32px;
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: #d62828;
+}
+
+.button-call:hover,
+.button-moreless:hover {
+  background-color: #8a1a1a;
+}
+
+.button-call:active,
+.button-moreless:active {
+  background-color: #b5b5b5;
+}
+
+.button-moreless {
+  padding: 16px 52px 16px 32px;
+  border: 2px solid #d62828;
+  background-color: transparent;
+}
+
+.button-moreless:hover {
+  border-color: #8a1a1a;
+}
+
+.button-moreless:active {
+  border-color: #b5b5b5;
 }
 
 .wrapper {

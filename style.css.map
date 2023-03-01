@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AIAA,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,MAAM;CAMxB;;AARD,AAIE,IAJE,CAIF,IAAI,CAAC;EACH,WAAW,EAAE,mBAAmB;EAChC,SAAS,EAAE,MAAM;CAClB;;ACPH,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,OAAO;CAChB;;AAED,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,KAAK,CAAA,AAAA,IAAC,CAAK,QAAQ,AAAb,EAAe;EACnB,MAAM,EAAE,OAAO;CAChB;;AQnBD,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;CACf",
+    "mappings": "AMAA,AJAA,YIAY;AACZ,gBAAgB,CJDJ;EACV,UAAU,EAAE,iBAAiB;CAC9B;;AEFD,AAAA,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,MAAM;CAMxB;;AARD,AAIE,IAJE,CAIF,IAAI,CAAC;EACH,WAAW,EAAE,mBAAmB;EAChC,SAAS,EAAE,MAAM;CAClB;;ACPH,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB;;AAED,AAAA,MAAM,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;EAChB,MAAM,EAAE,OAAO;CAChB;;AAED,AAAA,KAAK,CAAC;EACJ,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,IAAI;EACb,UAAU,EAAE,IAAI;CACjB;;AAED,AAAA,KAAK,CAAA,AAAA,IAAC,CAAK,QAAQ,AAAb,EAAe;EACnB,MAAM,EAAE,OAAO;CAChB;;ACnBD,AAAA,YAAY;AACZ,gBAAgB,CAAC;EACf,OAAO,EAAE,SAAS;EAClB,SAAS,ELGQ,MAAM;EKFvB,KAAK,ELYa,OAAO;EKXzB,gBAAgB,ELmBK,OAAO;CKT7B;;AAfD,AAQE,YARU,AAQT,MAAM;AAPT,gBAAgB,AAOb,MAAM,CAAC;EACN,gBAAgB,ELiBI,OAAO;CKhB5B;;AAVH,AAYE,YAZU,AAYT,OAAO;AAXV,gBAAgB,AAWb,OAAO,CAAC;EACP,gBAAgB,ELcK,OAAO;CKb7B;;AAGH,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,mBAAmB;EAC5B,MAAM,EAAE,GAAG,CAAC,KAAK,CLKI,OAAO;EKJ5B,gBAAgB,ELKU,WAAW;CKItC;;AAZD,AAKE,gBALc,AAKb,MAAM,CAAC;EACN,YAAY,ELGQ,OAAO;CKF5B;;AAPH,AASE,gBATc,AASb,OAAO,CAAC;EACP,YAAY,ELAS,OAAO;CKC7B;;AO5BH,AAAA,QAAQ,CAAC;EACP,QAAQ,EAAE,QAAQ;EAClB,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,MAAM;CACf",
     "sources": [
         "style.scss",
         "assets/sass/abstract/_constants.scss",
@@ -17,8 +17,16 @@
         "assets/sass/layouts/_wrapper.scss",
         "assets/sass/layouts/_columns.scss",
         "assets/sass/components/_header.scss",
-        "assets/sass/components/_main.scss",
+        "assets/sass/components/_screen.scss",
         "assets/sass/components/_services.scss",
+        "assets/sass/components/_about.scss",
+        "assets/sass/components/_engine.scss",
+        "assets/sass/components/_pumps.scss",
+        "assets/sass/components/_questions.scss",
+        "assets/sass/components/_certificates.scss",
+        "assets/sass/components/_prices.scss",
+        "assets/sass/components/_cooperation.scss",
+        "assets/sass/components/_faq.scss",
         "assets/sass/components/_footer.scss"
     ],
     "names": [],
