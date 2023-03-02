@@ -1,0 +1,24 @@
+input[type='submit'] {
+  width: 272px;
+  height: 51px;
+  font-size: $button-text-size;
+  color: $button-text-color;
+  background-color: $button-main-bg-color;
+  @extend %transition;
+}
+
+input[type='text'],
+input[type='phone'],
+input[type='email'] {
+  width: 272px;
+  height: 51px;
+  padding: 16px;
+  font-size: $form-text-size;
+  color: $form-text-color;
+  background-color: $secondary-bg-color;
+  @extend %transition;
+
+  &::placeholder {
+    color: $form-text-color;
+  }
+}

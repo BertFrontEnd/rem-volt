@@ -1,6 +1,7 @@
 .button-call,
 .button-moreless {
-  padding: 16px 32px;
+  width: 193px;
+  height: 51px;
   font-size: $button-text-size;
   color: $button-text-color;
   background-color: $button-main-bg-color;
@@ -16,7 +17,8 @@
 }
 
 .button-moreless {
-  padding: 16px 52px 16px 32px;
+  width: 175px;
+  height: 51px;
   border: 2px solid $button-main-bg-color;
   background-color: $button-secondary-bg-color;
 
