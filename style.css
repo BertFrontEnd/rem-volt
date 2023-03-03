@@ -14,6 +14,11 @@ html {
 html body {
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
+  background-color: #090303;
+  background-position: center top;
+  background-size: 1152px 870px;
+  background-repeat: repeat-y;
+  background-image: linear-gradient(45deg, transparent 45%, #081f3e 45%, #081f3e 54%, transparent 54%), linear-gradient(-45deg, transparent -45%, #081f3e -45%, #081f3e -54%, transparent -54%);
 }
 
 a {
@@ -77,6 +82,14 @@ input[type='submit'] {
   font-size: 1.6rem;
   color: #ffffff;
   background-color: #d62828;
+}
+
+input[type='submit']:hover {
+  background-color: #8a1a1a;
+}
+
+input[type='submit']:active {
+  background-color: #b5b5b5;
 }
 
 input[type='text'],

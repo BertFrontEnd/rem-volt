@@ -5,6 +5,14 @@ input[type='submit'] {
   color: $button-text-color;
   background-color: $button-main-bg-color;
   @extend %transition;
+
+  &:hover {
+    background-color: $button-hover-bg-color;
+  }
+
+  &:active {
+    background-color: $button-active-bg-color;
+  }
 }
 
 input[type='text'],
