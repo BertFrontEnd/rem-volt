@@ -1,0 +1,11 @@
+.main {
+  position: relative;
+  background-image: url(./assets/images/man-bg.jpg);
+
+  .main__overlay {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: $overlay-bg-color;
+  }
+}

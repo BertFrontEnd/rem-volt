@@ -14,14 +14,29 @@ html {
 html body {
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
-  background-color: #090303;
-  background-position: center top;
-  background-size: 1152px 870px;
-  background-repeat: repeat-y;
-  background-image: linear-gradient(45deg, transparent 45%, #081f3e 45%, #081f3e 54%, transparent 54%), linear-gradient(-45deg, transparent -45%, #081f3e -45%, #081f3e -54%, transparent -54%);
+  /* background-color: $primary-bg-color; */
+  background-color: grey;
+  /* background-position: center top;
+    background-size: 1152px 870px;
+    background-repeat: repeat-y;
+    background-image: linear-gradient(
+        45deg,
+        transparent 45%,
+        $line-bg-color 45%,
+        $line-bg-color 54%,
+        transparent 54%
+      ),
+      linear-gradient(
+        -45deg,
+        transparent -45%,
+        $line-bg-color -45%,
+        $line-bg-color -54%,
+        transparent -54%
+      ); */
 }
 
 a {
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -131,5 +146,96 @@ input[type='email']::placeholder {
   position: relative;
   max-width: 1792px;
   margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 8px 0;
+}
+
+.header__wrapper .header__logo {
+  width: 122px;
+  height: 100px;
+  background-image: url(./assets/logo.svg);
+  background-size: contain;
+  background-position: center;
+}
+
+.header__wrapper .header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 32px;
+  font-weight: 700;
+}
+
+.header__wrapper .header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 32px;
+}
+
+.main {
+  position: relative;
+  background-image: url(./assets/images/man-bg.jpg);
+}
+
+.main .main__overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: #09030280;
+}
+
+.screen__wrapper {
+  height: 100vh;
+  padding-top: 128px;
+}
+
+.screen__wrapper .screen__title {
+  margin-bottom: 32px;
+}
+
+.screen__wrapper .screen__text {
+  margin-bottom: 48px;
 }
 /*# sourceMappingURL=style.css.map */

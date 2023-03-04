@@ -1,0 +1,25 @@
+.header__wrapper {
+  @include alignment(space-between, center, row, nowrap);
+  padding: 8px 0;
+
+  .header__logo {
+    width: 122px;
+    height: 100px;
+    background-image: url(./assets/logo.svg);
+    background-size: contain;
+    background-position: center;
+  }
+
+  .header__info {
+    @include alignment(space-between, center, row, nowrap);
+    gap: 32px;
+    font-weight: 700;
+  }
+
+  .header__navigation {
+    ul {
+      @include alignment(space-between, center, row, nowrap);
+      gap: 32px;
+    }
+  }
+}

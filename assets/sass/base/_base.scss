@@ -5,8 +5,10 @@ html {
   body {
     font-family: 'Inter', sans-serif;
     font-size: 1.6rem;
-    background-color: $primary-bg-color;
-    background-position: center top;
+    /* background-color: $primary-bg-color; */
+    background-color: grey;
+
+    /* background-position: center top;
     background-size: 1152px 870px;
     background-repeat: repeat-y;
     background-image: linear-gradient(
@@ -22,6 +24,6 @@ html {
         $line-bg-color -45%,
         $line-bg-color -54%,
         transparent -54%
-      );
+      ); */
   }
 }
