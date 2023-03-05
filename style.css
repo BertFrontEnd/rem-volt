@@ -1,7 +1,7 @@
 .button-call,
 .button-moreless, input[type='submit'], input[type='text'],
 input[type='phone'],
-input[type='email'] {
+input[type='email'], .header__wrapper .header__navigation ul li a:after {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
@@ -221,7 +221,6 @@ input[type='email']::placeholder {
   width: 24px;
   height: 24px;
   content: '';
-  color: red;
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-50%);
@@ -260,6 +259,30 @@ input[type='email']::placeholder {
   font-size: 1.6rem;
   line-height: 19px;
   font-weight: 500;
+}
+
+.header__wrapper .header__navigation ul li a {
+  position: relative;
+}
+
+.header__wrapper .header__navigation ul li a:after {
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  content: '';
+  background-color: #ffffff;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.header__wrapper .header__navigation ul li a:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .main {
