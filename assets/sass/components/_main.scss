@@ -1,6 +1,8 @@
 .main {
   position: relative;
   background-image: url(./assets/images/man-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 
   .main__overlay {
     position: absolute;

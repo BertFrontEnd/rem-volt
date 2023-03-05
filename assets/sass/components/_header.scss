@@ -1,3 +1,10 @@
+.header {
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .header__wrapper {
   @include alignment(space-between, center, row, nowrap);
   padding: 8px 0;
@@ -13,13 +20,63 @@
   .header__info {
     @include alignment(space-between, center, row, nowrap);
     gap: 32px;
+    font-size: $menu-link-size;
+    line-height: 17px;
     font-weight: 700;
+
+    li {
+      a {
+        position: relative;
+        padding-left: 32px;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          display: block;
+          width: 24px;
+          height: 24px;
+          content: '';
+          color: red;
+          background-size: contain;
+          background-repeat: no-repeat;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    li:nth-child(1) {
+      a {
+        &::before {
+          background-image: url(./assets/icons/phone.svg);
+        }
+      }
+    }
+
+    li:nth-child(2) {
+      a {
+        &::before {
+          background-image: url(./assets/icons/mail.svg);
+        }
+      }
+    }
+
+    li:nth-child(3) {
+      a {
+        &::before {
+          background-image: url(./assets/icons/map-pin.svg);
+        }
+      }
+    }
   }
 
   .header__navigation {
     ul {
       @include alignment(space-between, center, row, nowrap);
       gap: 32px;
+      font-size: $menu-button-size;
+      line-height: 19px;
+      font-weight: 500;
     }
   }
 }

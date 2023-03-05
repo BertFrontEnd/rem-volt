@@ -35,6 +35,10 @@ html body {
       ); */
 }
 
+.selected-text {
+  color: #557c93;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -148,6 +152,13 @@ input[type='email']::placeholder {
   margin: 0 auto;
 }
 
+.header {
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .header__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -192,7 +203,41 @@ input[type='email']::placeholder {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 32px;
+  font-size: 1.4rem;
+  line-height: 17px;
   font-weight: 700;
+}
+
+.header__wrapper .header__info li a {
+  position: relative;
+  padding-left: 32px;
+}
+
+.header__wrapper .header__info li a::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: '';
+  color: red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header__wrapper .header__info li:nth-child(1) a::before {
+  background-image: url(./assets/icons/phone.svg);
+}
+
+.header__wrapper .header__info li:nth-child(2) a::before {
+  background-image: url(./assets/icons/mail.svg);
+}
+
+.header__wrapper .header__info li:nth-child(3) a::before {
+  background-image: url(./assets/icons/map-pin.svg);
 }
 
 .header__wrapper .header__navigation ul {
@@ -212,30 +257,45 @@ input[type='email']::placeholder {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   gap: 32px;
+  font-size: 1.6rem;
+  line-height: 19px;
+  font-weight: 500;
 }
 
 .main {
   position: relative;
   background-image: url(./assets/images/man-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .main .main__overlay {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background-color: #09030280;
+  background-color: #090302cc;
 }
 
 .screen__wrapper {
   height: 100vh;
-  padding-top: 128px;
+  padding-top: calc(128px + 116px);
 }
 
 .screen__wrapper .screen__title {
+  width: 954px;
   margin-bottom: 32px;
+  font-size: 6.4rem;
+  line-height: 64px;
+  font-weight: 900;
+  color: #ffffff;
 }
 
 .screen__wrapper .screen__text {
+  width: 511px;
   margin-bottom: 48px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 19px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
