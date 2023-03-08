@@ -1,0 +1,23 @@
+.arrow-collapsed,
+.arrow-deployed {
+  &::after {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    display: block;
+    width: 16px;
+    height: 16px;
+    content: '';
+    background-image: url(./assets/icons/arrow.svg);
+    background-size: 100%;
+    transform-origin: center;
+    transform: translateY(-50%);
+    @extend %transition;
+  }
+}
+
+.arrow-deployed {
+  &::after {
+    transform: rotate(-90deg) translateX(50%);
+  }
+}

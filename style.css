@@ -1,5 +1,8 @@
 .button-call,
-.button-moreless, input[type='submit'], input[type='text'],
+.button-moreless,
+.button-more,
+.button-less, .arrow-collapsed::after,
+.arrow-deployed::after, input[type='submit'], input[type='text'],
 input[type='phone'],
 input[type='email'], .header__wrapper .header__navigation ul li a:after {
   -webkit-transition: all 0.3s ease-out;
@@ -14,8 +17,8 @@ html {
 html body {
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
-  /* background-color: $primary-bg-color; */
-  background-color: grey;
+  background-color: #090303;
+  /* background-color: grey; */
 }
 
 .h1-text {
@@ -70,7 +73,9 @@ input[type='submit'] {
 }
 
 .button-call,
-.button-moreless {
+.button-moreless,
+.button-more,
+.button-less {
   width: 193px;
   height: 51px;
   font-size: 1.6rem;
@@ -79,28 +84,64 @@ input[type='submit'] {
 }
 
 .button-call:hover,
-.button-moreless:hover {
+.button-moreless:hover,
+.button-more:hover,
+.button-less:hover {
   background-color: #8a1a1a;
 }
 
 .button-call:active,
-.button-moreless:active {
+.button-moreless:active,
+.button-more:active,
+.button-less:active {
   background-color: #b5b5b5;
 }
 
-.button-moreless {
+.button-more,
+.button-less {
   width: 175px;
   height: 51px;
+  padding-left: 32px;
+  line-height: 19px;
+  text-align: left;
   border: 2px solid #d62828;
   background-color: transparent;
 }
 
-.button-moreless:hover {
+.button-more:hover,
+.button-less:hover {
   border-color: #8a1a1a;
 }
 
-.button-moreless:active {
+.button-more:active,
+.button-less:active {
   border-color: #b5b5b5;
+}
+
+.button-less {
+  width: 218px;
+}
+
+.arrow-collapsed::after,
+.arrow-deployed::after {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  display: block;
+  width: 16px;
+  height: 16px;
+  content: '';
+  background-image: url(./assets/icons/arrow.svg);
+  background-size: 100%;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.arrow-deployed::after {
+  -webkit-transform: rotate(-90deg) translateX(50%);
+          transform: rotate(-90deg) translateX(50%);
 }
 
 input[type='submit'] {
@@ -379,7 +420,6 @@ input[type='email']::placeholder {
 
 .services__wrapper .services__description .description__item {
   width: 424px;
-  /* height: 547px; */
   background-color: #ffffff;
 }
 
@@ -400,5 +440,9 @@ input[type='email']::placeholder {
   margin: 0 32px 48px 32px;
   font-weight: 400;
   line-height: 19px;
+}
+
+.services__wrapper .services__button {
+  position: relative;
 }
 /*# sourceMappingURL=style.css.map */
