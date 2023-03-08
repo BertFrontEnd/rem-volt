@@ -1,2 +1,38 @@
 .services__wrapper {
+  @include alignment(center, flex-start, column, wrap);
+  padding: 80px 0 64px 0;
+
+  .services__caption {
+    margin-bottom: 48px;
+  }
+
+  .services__description {
+    @include alignment(center, flex-start, row, wrap);
+    gap: 32px;
+    margin-bottom: 40px;
+
+    .description__item {
+      width: 424px;
+      /* height: 547px; */
+      background-color: $secondary-bg-color;
+    }
+    .item__image {
+      width: 100%;
+      height: 389px;
+      margin-bottom: 24px;
+      background-color: $additional-bg-color;
+    }
+
+    .item__service {
+      margin: 0 32px 10px 32px;
+      font-weight: 900;
+      line-height: 19px;
+    }
+
+    .item__clarification {
+      margin: 0 32px 48px 32px;
+      font-weight: 400;
+      line-height: 19px;
+    }
+  }
 }

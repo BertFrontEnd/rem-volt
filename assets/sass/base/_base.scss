@@ -7,25 +7,32 @@ html {
     font-size: 1.6rem;
     /* background-color: $primary-bg-color; */
     background-color: grey;
-
-    /* background-position: center top;
-    background-size: 1152px 870px;
-    background-repeat: repeat-y;
-    background-image: linear-gradient(
-        45deg,
-        transparent 45%,
-        $line-bg-color 45%,
-        $line-bg-color 54%,
-        transparent 54%
-      ),
-      linear-gradient(
-        -45deg,
-        transparent -45%,
-        $line-bg-color -45%,
-        $line-bg-color -54%,
-        transparent -54%
-      ); */
   }
+}
+
+.h1-text {
+  font-size: $h1-text-size;
+  color: $h1-text-color;
+}
+
+.h2-text {
+  font-size: $h2-text-size;
+  color: $h2-text-color;
+}
+
+.h3-text {
+  font-size: $h3-text-size;
+  color: $h3-text-color;
+}
+
+.main-text {
+  font-size: $main-text-size;
+  color: $main-text-color;
+}
+
+.info-text {
+  font-size: $info-text-size;
+  color: $info-text-color;
 }
 
 .selected-text {
