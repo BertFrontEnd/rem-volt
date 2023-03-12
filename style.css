@@ -231,6 +231,7 @@ input[type='email']::placeholder {
   width: 122px;
   height: 100px;
   background-image: url(./assets/logo.svg);
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
@@ -426,12 +427,11 @@ input[type='email']::placeholder {
 .services__wrapper .services__description .item__image {
   width: 100%;
   height: 389px;
-  margin-bottom: 24px;
   background-color: #868686;
 }
 
 .services__wrapper .services__description .item__service {
-  margin: 0 32px 10px 32px;
+  margin: 24px 32px 10px 32px;
   font-weight: 900;
   line-height: 19px;
 }
@@ -650,5 +650,49 @@ input[type='email']::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 32px;
+}
+
+.certificates__wrapper {
+  padding: 80px 0 102px 0;
+}
+
+.certificates__wrapper .certificates__title {
+  margin-bottom: 48px;
+}
+
+.certificates__wrapper .certificates__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+}
+
+.certificates__wrapper .certificates__item .item__description {
+  width: 424px;
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.certificates__wrapper .certificates__item .item__description .description__image {
+  height: 471px;
+  background-color: #868686;
+}
+
+.certificates__wrapper .certificates__item .item__description .description__text {
+  margin: 24px 32px 48px 32px;
+  font-weight: 900;
+  line-height: 19px;
 }
 /*# sourceMappingURL=style.css.map */
