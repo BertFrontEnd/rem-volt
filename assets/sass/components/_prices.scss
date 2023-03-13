@@ -1,0 +1,10 @@
+.prices__wrapper {
+  @include alignment(space-between, center, row, wrap);
+  padding: 80px 0 102px 0;
+
+  .prices__caption {
+  }
+
+  .prices__table {
+  }
+}
