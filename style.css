@@ -695,4 +695,65 @@ input[type='email']::placeholder {
   font-weight: 900;
   line-height: 19px;
 }
+
+.prices__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 80px 0 102px 0;
+  background-color: red;
+}
+
+.prices__wrapper .prices__caption {
+  width: 423px;
+}
+
+.prices__wrapper .prices__caption .caption__title {
+  margin-bottom: 24px;
+}
+
+.prices__wrapper .prices__caption .caption__message {
+  margin-bottom: 48px;
+}
+
+.prices__wrapper .prices__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.prices__wrapper .prices__table .table__price {
+  width: 334px;
+  text-align: left;
+}
+
+.prices__wrapper .prices__table .table__price th {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
 /*# sourceMappingURL=style.css.map */
