@@ -24,16 +24,19 @@ html body {
 .h1-text {
   font-size: 6.4rem;
   color: #ffffff;
+  font-weight: 900;
 }
 
 .h2-text {
   font-size: 4rem;
   color: #ffffff;
+  font-weight: 900;
 }
 
 .h3-text {
   font-size: 2.4rem;
   color: #ffffff;
+  font-weight: 900;
 }
 
 .main-text {
@@ -366,7 +369,6 @@ input[type='email']::placeholder {
   width: 954px;
   margin-bottom: 32px;
   line-height: 64px;
-  font-weight: 900;
 }
 
 .screen__wrapper .screen__text {
@@ -713,7 +715,6 @@ input[type='email']::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 80px 0 102px 0;
-  background-color: red;
 }
 
 .prices__wrapper .prices__caption {
@@ -752,8 +753,16 @@ input[type='email']::placeholder {
 }
 
 .prices__wrapper .prices__table .table__price th {
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 19px;
+  color: #ffffff;
+}
+
+.prices__wrapper .prices__table .table__price td {
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 29px;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
