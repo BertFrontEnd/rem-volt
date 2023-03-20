@@ -699,37 +699,40 @@ input[type='email']::placeholder {
 }
 
 .prices__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   padding: 80px 0 102px 0;
 }
 
-.prices__wrapper .prices__caption {
-  width: 423px;
-}
-
-.prices__wrapper .prices__caption .caption__title {
+.prices__wrapper .prices__title {
   margin-bottom: 24px;
 }
 
-.prices__wrapper .prices__caption .caption__message {
+.prices__wrapper .prices__chapter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.prices__wrapper .prices__chapter .chapter__caption {
+  width: 423px;
+}
+
+.prices__wrapper .prices__chapter .chapter__caption .caption__message {
   margin-bottom: 48px;
 }
 
-.prices__wrapper .prices__table {
+.prices__wrapper .prices__chapter .chapter__table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,22 +750,93 @@ input[type='email']::placeholder {
       flex-wrap: wrap;
 }
 
-.prices__wrapper .prices__table .table__price {
+.prices__wrapper .prices__chapter .chapter__table .table__price {
   width: 334px;
   text-align: left;
+  border-collapse: collapse;
 }
 
-.prices__wrapper .prices__table .table__price th {
+.prices__wrapper .prices__chapter .chapter__table .table__price th {
+  width: 334px;
+  height: 36px;
+  padding: 0 16px;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 19px;
   color: #ffffff;
+  background-color: #557c93;
+  border: 1px solid #ffffff;
 }
 
-.prices__wrapper .prices__table .table__price td {
+.prices__wrapper .prices__chapter .chapter__table .table__price td {
+  width: 334px;
+  height: 65px;
+  padding: 0 16px;
   font-size: 2.4rem;
   font-weight: 900;
   line-height: 29px;
   color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+.cooperation__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 80px 0 306px 0;
+}
+
+.cooperation__wrapper .cooperation__title {
+  margin-bottom: 48px;
+}
+
+.cooperation__wrapper .cooperation__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 32px;
+}
+
+.cooperation__wrapper .cooperation__item .item__description {
+  width: 272px;
+  height: 396px;
+  background-color: #ffffff;
+}
+
+.cooperation__wrapper .cooperation__item .item__description .description__image {
+  width: 100%;
+  height: 272px;
+  background-color: #868686;
+}
+
+.cooperation__wrapper .cooperation__item .item__description .description__text {
+  margin: 24px 32px;
+  font-weight: 400;
+  line-height: 19px;
 }
 /*# sourceMappingURL=style.css.map */

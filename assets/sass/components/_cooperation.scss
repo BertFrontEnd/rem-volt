@@ -1,0 +1,31 @@
+.cooperation__wrapper {
+  @include alignment(center, flex-start, column, wrap);
+  padding: 80px 0 306px 0;
+
+  .cooperation__title {
+    margin-bottom: 48px;
+  }
+
+  .cooperation__item {
+    @include alignment(space-between, center, row, wrap);
+    gap: 32px;
+
+    .item__description {
+      width: 272px;
+      height: 396px;
+      background-color: $secondary-bg-color;
+
+      .description__image {
+        width: 100%;
+        height: 272px;
+        background-color: $additional-bg-color;
+      }
+
+      .description__text {
+        margin: 24px 32px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+    }
+  }
+}

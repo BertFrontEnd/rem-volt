@@ -1,38 +1,52 @@
 .prices__wrapper {
-  @include alignment(space-between, center, row, wrap);
   padding: 80px 0 102px 0;
 
-  .prices__caption {
-    width: 423px;
-
-    .caption__title {
-      margin-bottom: 24px;
-    }
-
-    .caption__message {
-      margin-bottom: 48px;
-    }
+  .prices__title {
+    margin-bottom: 24px;
   }
 
-  .prices__table {
-    @include alignment(space-between, center, row, wrap);
+  .prices__chapter {
+    @include alignment(space-between, flex-start, row, wrap);
 
-    .table__price {
-      width: 334px;
-      text-align: left;
+    .chapter__caption {
+      width: 423px;
 
-      th {
-        font-size: $main-text-size;
-        font-weight: 500;
-        line-height: 19px;
-        color: $main-text-color;
+      .caption__message {
+        margin-bottom: 48px;
       }
+    }
 
-      td {
-        font-size: $price-text-size;
-        font-weight: 900;
-        line-height: 29px;
-        color: $main-text-color;
+    .chapter__table {
+      @include alignment(space-between, center, row, wrap);
+
+      .table__price {
+        width: 334px;
+        text-align: left;
+        border-collapse: collapse;
+
+        th {
+          width: 334px;
+          height: 36px;
+          padding: 0 16px;
+          font-size: $main-text-size;
+          font-weight: 500;
+          line-height: 19px;
+          color: $main-text-color;
+          background-color: $table-bg-color;
+          border: 1px solid $table-border-color;
+        }
+
+        td {
+          width: 334px;
+          height: 65px;
+          padding: 0 16px;
+          font-size: $price-text-size;
+          font-weight: 900;
+          line-height: 29px;
+          color: $main-text-color;
+          background-color: transparent;
+          border: 1px solid $table-border-color;
+        }
       }
     }
   }
