@@ -839,4 +839,49 @@ input[type='email']::placeholder {
   font-weight: 400;
   line-height: 19px;
 }
+
+.faq__wrapper {
+  padding: 80px 0 286px 0;
+}
+
+.faq__wrapper .faq__title {
+  margin-bottom: 48px;
+}
+
+.faq__wrapper .faq__accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 16px;
+}
+
+.faq__wrapper .faq__accordion .accordion__list {
+  width: 1184px;
+  background-color: #ffffff;
+}
+
+.faq__wrapper .faq__accordion .accordion__list .list__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #090302;
+  padding: 18.5px 0 18.5px 16px;
+}
+
+.faq__wrapper .faq__accordion .accordion__list .list__item {
+  display: none;
+  color: #090302;
+}
 /*# sourceMappingURL=style.css.map */
