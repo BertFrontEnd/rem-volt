@@ -1,7 +1,8 @@
 .button-call,
 .button-moreless,
 .button-more,
-.button-less, .arrow-collapsed::after,
+.button-less, .button-plus::after,
+.button-minus::after, .arrow-collapsed::after,
 .arrow-deployed::after, input[type='submit'], input[type='text'],
 input[type='phone'],
 input[type='email'], .header__wrapper .header__navigation ul li a:after {
@@ -123,6 +124,27 @@ input[type='submit'] {
 
 .button-less {
   width: 218px;
+}
+
+.button-plus::after,
+.button-minus::after {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: '';
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.button-plus::after {
+  background-image: url(./assets/icons/plus.svg);
+}
+
+.button-minus::after {
+  background-image: url(./assets/icons/minus.svg);
 }
 
 .arrow-collapsed::after,
@@ -869,19 +891,33 @@ input[type='email']::placeholder {
 
 .faq__wrapper .faq__accordion .accordion__list {
   width: 1184px;
-  background-color: #ffffff;
 }
 
 .faq__wrapper .faq__accordion .accordion__list .list__button {
+  position: relative;
+  width: 100%;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  text-align: left;
   color: #090302;
-  padding: 18.5px 0 18.5px 16px;
+  background-color: #ffffff;
+  padding: 18.5px 56px 18.5px 16px;
 }
 
 .faq__wrapper .faq__accordion .accordion__list .list__item {
+  width: 1006px;
+  padding: 32px 16px;
+  font-weight: 400;
+  line-height: 19px;
+  background-color: transparent;
+}
+
+.faq__wrapper .faq__accordion .accordion__list .item-collapsed {
   display: none;
-  color: #090302;
+}
+
+.faq__wrapper .faq__accordion .accordion__list .item-deployed {
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */

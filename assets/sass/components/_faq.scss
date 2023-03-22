@@ -11,19 +11,33 @@
 
     .accordion__list {
       width: 1184px;
-      background-color: $secondary-bg-color;
 
       .list__button {
+        position: relative;
+        width: 100%;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
+        text-align: left;
         color: $question-text-color;
-        padding: 18.5px 0 18.5px 16px;
+        background-color: $secondary-bg-color;
+        padding: 18.5px 56px 18.5px 16px;
       }
 
       .list__item {
+        width: 1006px;
+        padding: 32px 16px;
+        font-weight: 400;
+        line-height: 19px;
+        background-color: transparent;
+      }
+
+      .item-collapsed {
         display: none;
-        color: $question-text-color;
+      }
+
+      .item-deployed {
+        display: block;
       }
     }
   }

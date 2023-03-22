@@ -40,3 +40,30 @@
 .button-less {
   width: 218px;
 }
+
+.button-plus,
+.button-minus {
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    content: '';
+    transform: translateY(-50%);
+    @extend %transition;
+  }
+}
+
+.button-plus {
+  &::after {
+    background-image: url(./assets/icons/plus.svg);
+  }
+}
+
+.button-minus {
+  &::after {
+    background-image: url(./assets/icons/minus.svg);
+  }
+}
