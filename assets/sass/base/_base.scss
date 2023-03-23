@@ -41,3 +41,8 @@ html {
 .selected-text {
   color: $selected-text-color;
 }
+
+.mini-text {
+  font-size: $mini-text-size;
+  color: $mini-text-color;
+}

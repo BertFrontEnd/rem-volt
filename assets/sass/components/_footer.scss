@@ -1,0 +1,56 @@
+.footer {
+  background-color: $footer-bg-color;
+
+  .footer__wrapper {
+    padding: 80px 65px 40px 65px;
+
+    .form__info {
+      @include alignment(space-between, center, row, wrap);
+      gap: 32px;
+
+      .info__form {
+        ul {
+          .form__text {
+            width: 432px;
+            margin-bottom: 16px;
+          }
+
+          .form__phone {
+            width: 432px;
+            margin-bottom: 16px;
+          }
+
+          .form__submit {
+            margin-bottom: 4px;
+          }
+
+          .form__notification {
+            width: 272px;
+            font-weight: 400;
+            line-height: 15px;
+          }
+        }
+      }
+
+      .info__contacts {
+        width: 390px;
+
+        .contacts__title {
+          margin-bottom: 16px;
+
+          .list__phone {
+          }
+
+          .list__email {
+          }
+
+          .list__mail {
+          }
+
+          .list__address {
+          }
+        }
+      }
+    }
+  }
+}
