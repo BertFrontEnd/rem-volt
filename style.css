@@ -941,9 +941,9 @@ input[type='email']::placeholder {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -975,9 +975,78 @@ input[type='email']::placeholder {
 
 .footer .footer__wrapper .form__info .info__contacts {
   width: 390px;
+  font-size: 1.4rem;
 }
 
 .footer .footer__wrapper .form__info .info__contacts .contacts__title {
   margin-bottom: 16px;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list {
+  color: #ffffff;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list li {
+  position: relative;
+  margin-bottom: 16px;
+  padding-left: 34px;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list li::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__phone {
+  line-height: 17px;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__phone a {
+  font-weight: 700;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__phone::before {
+  background-image: url(./assets/icons/phone.svg);
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__email {
+  font-weight: 700;
+  line-height: 17px;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__email::before {
+  background-image: url(./assets/icons/mail.svg);
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__mail {
+  line-height: 17px;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__mail span:first-child {
+  font-weight: 700;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__mail::before {
+  background-image: url(./assets/icons/map-pin.svg);
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address {
+  line-height: 17px;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address span:first-child {
+  font-weight: 700;
+}
+
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address::before {
+  background-image: url(./assets/icons/map-pin.svg);
 }
 /*# sourceMappingURL=style.css.map */
