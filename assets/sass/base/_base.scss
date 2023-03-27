@@ -42,6 +42,11 @@ html {
   color: $selected-text-color;
 }
 
+.small-text {
+  font-size: $small-text-size;
+  color: $small-text-color;
+}
+
 .mini-text {
   font-size: $mini-text-size;
   color: $mini-text-color;

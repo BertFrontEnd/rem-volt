@@ -7,6 +7,7 @@
     .form__info {
       @include alignment(space-between, flex-start, row, wrap);
       gap: 32px;
+      margin-bottom: 45px;
 
       .info__form {
         ul {
@@ -112,6 +113,12 @@
           }
         }
       }
+    }
+
+    .footer__copyright {
+      width: 100%;
+      text-align: center;
+      line-height: 17px;
     }
   }
 }

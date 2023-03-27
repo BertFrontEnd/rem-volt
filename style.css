@@ -54,6 +54,11 @@ html body {
   color: #557c93;
 }
 
+.small-text {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
 .mini-text {
   font-size: 1.2rem;
   color: #ffffff;
@@ -951,6 +956,7 @@ input[type='email']::placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 32px;
+  margin-bottom: 45px;
 }
 
 .footer .footer__wrapper .form__info .info__form ul .form__text {
@@ -1048,5 +1054,11 @@ input[type='email']::placeholder {
 
 .footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address::before {
   background-image: url(./assets/icons/map-pin.svg);
+}
+
+.footer .footer__wrapper .footer__copyright {
+  width: 100%;
+  text-align: center;
+  line-height: 17px;
 }
 /*# sourceMappingURL=style.css.map */
