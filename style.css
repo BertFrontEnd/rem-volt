@@ -64,6 +64,10 @@ html body {
   color: #ffffff;
 }
 
+.bolt-text {
+  font-weight: 700;
+}
+
 a {
   color: #ffffff;
   text-decoration: none;
@@ -981,15 +985,15 @@ input[type='email']::placeholder {
 
 .footer .footer__wrapper .form__info .info__contacts {
   width: 390px;
-  font-size: 1.4rem;
 }
 
 .footer .footer__wrapper .form__info .info__contacts .contacts__title {
   margin-bottom: 16px;
+  line-height: 29px;
 }
 
 .footer .footer__wrapper .form__info .info__contacts .contacts__list {
-  color: #ffffff;
+  line-height: 17px;
 }
 
 .footer .footer__wrapper .form__info .info__contacts .contacts__list li {
@@ -1011,49 +1015,33 @@ input[type='email']::placeholder {
   background-position: center;
 }
 
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__phone {
-  line-height: 17px;
-}
-
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__phone a {
-  font-weight: 700;
-}
-
 .footer .footer__wrapper .form__info .info__contacts .contacts__list .list__phone::before {
   background-image: url(./assets/icons/phone.svg);
-}
-
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__email {
-  font-weight: 700;
-  line-height: 17px;
 }
 
 .footer .footer__wrapper .form__info .info__contacts .contacts__list .list__email::before {
   background-image: url(./assets/icons/mail.svg);
 }
 
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__mail {
-  line-height: 17px;
-}
-
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__mail span:first-child {
-  font-weight: 700;
-}
-
 .footer .footer__wrapper .form__info .info__contacts .contacts__list .list__mail::before {
   background-image: url(./assets/icons/map-pin.svg);
 }
 
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address {
+.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address::before {
+  background-image: url(./assets/icons/map-pin.svg);
+}
+
+.footer .footer__wrapper .form__info .info__requisites .requisites__title {
+  line-height: 29px;
+  margin-bottom: 16px;
+}
+
+.footer .footer__wrapper .form__info .info__requisites .requisites__item {
   line-height: 17px;
 }
 
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address span:first-child {
-  font-weight: 700;
-}
-
-.footer .footer__wrapper .form__info .info__contacts .contacts__list .list__address::before {
-  background-image: url(./assets/icons/map-pin.svg);
+.footer .footer__wrapper .form__info .info__requisites .requisites__item li:first-child {
+  margin-bottom: 20px;
 }
 
 .footer .footer__wrapper .footer__copyright {

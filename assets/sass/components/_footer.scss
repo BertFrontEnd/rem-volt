@@ -35,14 +35,14 @@
 
       .info__contacts {
         width: 390px;
-        font-size: $small-text-size;
 
         .contacts__title {
           margin-bottom: 16px;
+          line-height: 29px;
         }
 
         .contacts__list {
-          color: $main-text-color;
+          line-height: 17px;
 
           li {
             position: relative;
@@ -64,51 +64,42 @@
           }
 
           .list__phone {
-            line-height: 17px;
-
-            a {
-              font-weight: 700;
-            }
-
             &::before {
               background-image: url(./assets/icons/phone.svg);
             }
           }
 
           .list__email {
-            font-weight: 700;
-            line-height: 17px;
-
             &::before {
               background-image: url(./assets/icons/mail.svg);
             }
           }
 
           .list__mail {
-            line-height: 17px;
-
-            span {
-              &:first-child {
-                font-weight: 700;
-              }
-            }
-
             &::before {
               background-image: url(./assets/icons/map-pin.svg);
             }
           }
 
           .list__address {
-            line-height: 17px;
-
-            span {
-              &:first-child {
-                font-weight: 700;
-              }
-            }
-
             &::before {
               background-image: url(./assets/icons/map-pin.svg);
+            }
+          }
+        }
+      }
+
+      .info__requisites {
+        .requisites__title {
+          line-height: 29px;
+          margin-bottom: 16px;
+        }
+
+        .requisites__item {
+          line-height: 17px;
+          li {
+            &:first-child {
+              margin-bottom: 20px;
             }
           }
         }
