@@ -6,7 +6,8 @@
 
     .form__info {
       @include alignment(space-between, flex-start, row, wrap);
-      gap: 32px;
+      row-gap: 32px;
+      column-gap: 24px;
       margin-bottom: 45px;
 
       .info__form {
@@ -96,7 +97,9 @@
         }
 
         .requisites__item {
+          margin-bottom: 24px;
           line-height: 17px;
+
           li {
             &:first-child {
               margin-bottom: 20px;

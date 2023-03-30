@@ -959,7 +959,9 @@ input[type='email']::placeholder {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 32px;
+  row-gap: 32px;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
   margin-bottom: 45px;
 }
 
@@ -1037,6 +1039,7 @@ input[type='email']::placeholder {
 }
 
 .footer .footer__wrapper .form__info .info__requisites .requisites__item {
+  margin-bottom: 24px;
   line-height: 17px;
 }
 
