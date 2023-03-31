@@ -54,6 +54,13 @@ html body {
   color: #557c93;
 }
 
+.hight-text {
+  font-size: 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 24px;
+}
+
 .small-text {
   font-size: 1.4rem;
   color: #ffffff;
@@ -1045,6 +1052,35 @@ input[type='email']::placeholder {
 
 .footer .footer__wrapper .form__info .info__requisites .requisites__item li:first-child {
   margin-bottom: 20px;
+}
+
+.footer .footer__wrapper .form__info .info__requisites .requisites__schedule {
+  margin-bottom: 16px;
+  line-height: 17px;
+}
+
+.footer .footer__wrapper .form__info .info__requisites .requisites__days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+}
+
+.footer .footer__wrapper .form__info .info__requisites .requisites__days .days__week p:first-child {
+  margin-bottom: 7px;
 }
 
 .footer .footer__wrapper .footer__copyright {
