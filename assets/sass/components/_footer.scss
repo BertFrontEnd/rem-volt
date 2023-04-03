@@ -125,6 +125,27 @@
           }
         }
       }
+
+      .info__navigation {
+        .navigation__title {
+          margin-bottom: 16px;
+          line-height: 24px;
+        }
+        .navigation__list {
+          @include alignment(flex-start, flex-start, column, wrap);
+          row-gap: 16px;
+          line-height: 17px;
+        }
+      }
+
+      .info__logo {
+        width: 122px;
+        height: 100px;
+        background-image: url(./assets/logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      }
     }
 
     .footer__copyright {
