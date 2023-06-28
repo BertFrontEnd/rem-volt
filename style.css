@@ -927,26 +927,17 @@ input[type='email']::placeholder {
 }
 
 .faq__wrapper .faq__accordion .accordion__list .list__item {
-  display: block;
+  overflow: hidden;
   width: 1006px;
-  padding: 32px 16px;
+  max-height: 0;
   font-weight: 400;
   line-height: 19px;
-  background-color: red;
+  -webkit-transition: max-height 0.3s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 
-.faq__wrapper .faq__accordion .accordion__list .item-collapsed {
-  display: none;
-  /* height: 0;
-        overflow: hidden;
-        @extend %transition */
-}
-
-.faq__wrapper .faq__accordion .accordion__list .item-deployed {
-  display: block;
-  /* overflow: auto;
-        height: auto;
-        @extend %transition; */
+.faq__wrapper .faq__accordion .accordion__list .list__item .item__accordion-text {
+  padding: 32px 16px;
 }
 
 .footer {

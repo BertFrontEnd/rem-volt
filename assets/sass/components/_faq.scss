@@ -25,26 +25,16 @@
       }
 
       .list__item {
-        display: block;
+        overflow: hidden;
         width: 1006px;
-        padding: 32px 16px;
+        max-height: 0;
         font-weight: 400;
         line-height: 19px;
-        background-color: red;
-      }
+        transition: max-height 0.3s ease-out;
 
-      .item-collapsed {
-        display: none;
-        /* height: 0;
-        overflow: hidden;
-        @extend %transition */
-      }
-
-      .item-deployed {
-        display: block;
-        /* overflow: auto;
-        height: auto;
-        @extend %transition; */
+        .item__accordion-text {
+          padding: 32px 16px;
+        }
       }
     }
   }

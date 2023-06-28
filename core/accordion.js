@@ -6,9 +6,12 @@ const setReplacement = () => {
     button.addEventListener('click', function () {
       this.classList.toggle('button-plus');
       this.classList.toggle('button-minus');
-      console.log(this.nextElementSibling);
-      this.nextElementSibling.classList.toggle('item-collapsed');
-      this.nextElementSibling.classList.toggle('item-deployed');
+
+      let element = this.nextElementSibling;
+
+      element.style.maxHeight
+        ? (element.style.maxHeight = null)
+        : (element.style.maxHeight = `${element.scrollHeight}px`);
     });
   }
 };
